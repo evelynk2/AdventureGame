@@ -1,0 +1,446 @@
+{
+   "startingRoom":"Evelyn's Room",
+   "endingRoom":"Bathroom",
+   "player": {
+    "items": [
+        {
+            "name": "hot cheetos",
+            "teleportation": "false"
+        }
+    ]
+   },
+   "rooms":[
+      {
+         "name":"Evelyn's Room",
+         "description":"You are looking out the window in your room, seeing the beautiful view of a park. You turn around and see the hallway in front of you.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Upstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"hairbrush",
+               "teleportation": "false",
+               "trivia": "What is Evelyn's favorite color?",
+               "validAnswers": [
+                    "green",
+                    "blue"
+               ]
+            },
+            {
+               "name":"participation medal",
+               "teleportation": "false",
+               "trivia": "What is Evelyn's favorite fast food?",
+               "validAnswers": [
+                    "chipotle"
+               ]
+            },
+            {
+               "name":"cat treat",
+               "teleportation": "false",
+               "trivia": "What is Evelyn's major?",
+               "validAnswers": [
+                    "computer science",
+                    "philosophy",
+                    "anthropology",
+                    "spanish"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Upstairs Hallway",
+         "description":"You are in the upstairs hallway of your house. You hear your sister praying for hot cheetos in her room to the left, and you turn to see your cat laying on the stairs to the first floor in front of you, and your parents' room on your right.",
+         "directions":[
+            {
+               "directionName":"Left",
+               "room":"Sister's Room",
+               "enabled":"false",
+               "validKeyNames":[
+                  "hot cheetos"
+               ]
+            },
+            {
+               "directionName":"Forward",
+               "room":"Stairs",
+               "enabled":"false",
+               "validKeyNames":[
+                  "cat treat"
+               ]
+            },
+            {
+               "directionName":"Right",
+               "room":"Parents' Room",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Evelyn's Room",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Sister's Room",
+         "description":"You are in your sister's room. As promised, you give the sister some hot cheetos. In front of you, you see the entrance back into the hallway",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Upstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"painting",
+               "teleportation": "true",
+               "trivia": "Does Evelyn have a cat?",
+               "validAnswers": [
+                    "yes"
+               ]
+            },
+            {
+               "name":"laptop",
+               "teleportation": "false",
+               "trivia": "What is a sport Evelyn plays?",
+               "validAnswers": [
+                    "badminton",
+                    "volleyball",
+                    "swimming"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Stairs",
+         "description":"You are on the stairs and see your cat sprawled on one of the steps. To be allowed to pass, you give her a cat treat and continue on. You can go up to the upstairs hallway or down to the downstairs hallway.",
+         "directions":[
+            {
+               "directionName":"Up",
+               "room":"Upstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Down",
+               "room":"Downstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Parents' Room",
+         "description":"You are in your parents' room. Everything is organized and tidy and there is nothing out of place to pick up. In front of you, you see the entrance back into the upstairs hallway.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Upstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Downstairs Hallway",
+         "description":"You are in the downstairs hallway. You can see the living room in front of you and the stairs to go upstairs behind you.",
+         "directions":[
+            {
+               "directionName":"Forwards",
+               "room":"Living Room",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Stairs",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Living Room",
+         "description":"You are in the living room. To your right is the bathroom and to your left is the kitchen. Behind you is the downstairs hallway.",
+         "directions":[
+            {
+               "directionName":"Right",
+               "room":"Bathroom",
+               "enabled":"false",
+               "validKeyNames":[
+                  "key"
+               ]
+            },
+            {
+               "directionName":"Left",
+               "room":"Kitchen",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Downstairs Hallway",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"tv remote",
+               "teleportation": "false",
+               "trivia": "What is Evelyn's favorite TV show?",
+               "validAnswers": [
+                    "prison break",
+                    "el internado",
+                    "the office"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Kitchen",
+         "description":"You are in the kitchen. You can go forward to the dining table or behind you back to the living room.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Dining Table",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Living Room",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"hammer",
+               "teleportation": "false",
+               "trivia": "How many sisters does Evelyn have?",
+               "validAnswers": [
+                    "two",
+                    "2"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Dining Table",
+         "description":"You are by the dining table. You can see the pantry to your right, the door leading to the basement in front of you, and the kitchen behind you.",
+         "directions":[
+            {
+               "directionName":"Right",
+               "room":"Pantry",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Forwards",
+               "room":"Basement Door",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Kitchen",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"knife",
+               "teleportation": "true",
+               "trivia": "Where did Evelyn go for Winter Break '18/'19?",
+               "validAnswers": [
+                    "israel"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Pantry",
+         "description":"You are in the pantry. You turn around and see the dining table in front of you.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Dining Table",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Basement Door",
+         "description":"You are heading down to the basement. You can continue.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Basement Entrance",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Basement Entrance",
+         "description":"You are in the entrance of the basement. You can go back to the dining table through the basement door or go right to the TV room or forward to the ping pong table.",
+         "directions":[
+            {
+               "directionName":"Back",
+               "room":"Dining Table",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            },
+            {
+               "directionName":"Right",
+               "room":"TV Room",
+               "enabled":"false",
+               "validKeyNames":[
+                  "tv remote"
+               ]
+            },
+            {
+               "directionName":"Forward",
+               "room":"Ping Pong Table",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"TV Room",
+         "description":"You are in the TV Room. You use the TV Remote to turn on the TV, but then realize the TV is broken. You turn around and look ahead to the basement entrance.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Basement Entrance",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Ping Pong Table",
+         "description":"You are by the Ping Pong Table. You hit the ball against the paddle a few times and watch as your cat, who has followed you, jumps after the ball. Getting bored, you look to your right and see the closet and look back and see the basement entrance.",
+         "directions":[
+            {
+               "directionName":"Right",
+               "room":"Closet",
+               "enabled":"false",
+               "validKeyNames":[
+                  "hammer"
+               ]
+            },
+            {
+               "directionName":"Back",
+               "room":"Basement Entrance",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items":[
+            {
+               "name":"paddle",
+               "teleportation": "false",
+               "trivia": "What language (other than English) does Evelyn know?",
+               "validAnswers": [
+                    "spanish",
+                    "russian"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Closet",
+         "description":"After hammering down the door, you find yourself in the closet. You look forward to see the ping pong table.",
+         "directions":[
+            {
+               "directionName":"Forward",
+               "room":"Ping Pong Table",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ],
+         "items": [
+            {
+                "name": "key",
+                "teleportation": "false",
+                "trivia": "What is Evelyn's cats' name?",
+                "validAnswers": [
+                    "princess"
+                ]
+            }
+         ]
+      },
+      {
+         "name":"Bathroom",
+         "description":"Opening up the door to the bathroom, you enter and turn to face the mirror. And suddenly, after this entire adventure, you finally realize why this is the ending room. Smiling at the mirror, you realize that YOU are the real prize.",
+         "directions":[
+            {
+               "directionName":"Back",
+               "room":"Living Room",
+               "enabled":"true",
+               "validKeyNames":[
+
+               ]
+            }
+         ]
+      }
+   ]
+}
